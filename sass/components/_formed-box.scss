@@ -1,0 +1,118 @@
+.formed-box__wrapper {
+  background-color: var(--color-white);
+  padding: 2px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 85%;
+    aspect-ratio: 1/1;
+    background-color: var(--color-primary-dark);
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.formed-box {
+  //   background-color: red;
+  background-color: var(--color-primary);
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 24rem;
+  &__info {
+    padding: 1.5rem 2rem 3rem 2rem;
+    color: var(--color-black-2);
+    h3 {
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 153%; /* 27.54px */
+      margin-top: 1.9rem;
+    }
+  }
+  &__form {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    input {
+      padding: 1rem 0;
+      width: 100%;
+      max-width: 15rem;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border-bottom: 1px solid var(--color-primary-dark);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%; /* 19.8px */
+
+      &::placeholder {
+        color: var(--color-primary-dark);
+      }
+
+      &[type="number"] {
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+
+      &:focus {
+        border-color: var(--color-primary-dark-2);
+      }
+    }
+    button {
+      padding: 0.85rem 1.8rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    img {
+      position: absolute;
+      //   background-color: red;
+      height: 135%;
+      left: 50%;
+      transform: translateX(-53%);
+      bottom: 0;
+    }
+
+    &.formed-2 {
+      img {
+        // background-color: red;
+        height: auto;
+        width: 110%;
+        bottom: 15%;
+        transform: translateX(-58%);
+      }
+    }
+    &.formed-catalog {
+      img {
+        // background-color: red;
+        height: auto;
+        width: 100%;
+        bottom: 0;
+        transform: translateX(-55%);
+      }
+    }
+  }
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header">
+      <!-- Header copy  -->
+
+      <div class="header__copy">
+        <div class="container">
+          <p class="header__copy__text">
+            <span>Ouverture été 2024</span> <br />Le restaurant Evenement luxe
+            solidaire paris vous accueille tout au long du mois de juillet !
+          </p>
+        </div>
+      </div>
+
+      <!-- Header Nav  -->
+
+      <div class="header__navigation" >
+        <div class="container">
+          <div class="header__nav">
+            <a href="index.html" class="header__logo">
+              <img src="img/logo/logo-brand.svg" alt="logo-brand" ></img>
+            </a>
+            <nav>
+              <ul class="header__nav__list">
+                <li class="header__nav__list-item">
+                  <a class="header__nav__link" href="about.html">À propos de nous</a>
+                </li>
+                <li class="header__nav__list-item parrent">
+                  <a class="header__nav__link active" href="#">Menu <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                      <a href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                      <a href="#">lorem ipsum</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav__list-item">
+                  <a class="header__nav__link" href="#">Nouvelles et promotion</a>
+                </li>
+                <li class="header__nav__list-item">
+                  <a class="header__nav__link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__control">
+              <button>
+                <img src="img/icon/search-icon.svg" alt="search-icon">
+              </button>
+              <div  class="selecteds">
+                <button class="selecteds-btn">
+                  <img src="img/icon/theme-icon.svg" alt="theme-icon"> 
+                </button>
+                <div class="selecteds__box">
+                  <ul class="selecteds__list">
+                    <li  class="selecteds__list-item">
+                      <img src="img/pictures/selected-img.png" alt="selected-img">
+                      <div class="selecteds__list-item__info">
+                        <h4>À la carte</h4>
+                        <p>La conception de desserts nécessite une</p>
+                      </div>
+                      <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>    
+                    </li>
+                    <li  class="selecteds__list-item">
+                      <img src="img/pictures/selected-img-2.png" alt="selected-img">
+                      <div class="selecteds__list-item__info">
+                        <h4>À la carte</h4>
+                        <p>La conception de desserts nécessite une</p>
+                      </div>
+                      <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>    
+                    </li>
+                  </ul>
+                  <button class="btn_white">Envoyer</button>
+
+                </div>
+              </div>
+
+              
+              <button class="btn btn_primary">+998(99) 999 99 99</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <main>
+      <section class="page-head">
+        <div class="container">
+          <div class="page-head__wrapper back-line wow fadeInUp">
+
+            <div class="page-head__box  " data-wow-delay=".2s" >
+              <h2 class="section__header">À la carte</h2>
+              <img class="page-head__bg" src="img/pictures/page-head-3.png" alt="page-head-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="meal-cards">
+        <div class="container">
+          <p class="meal-cards__right-text">La conception de desserts nécessite une sélection minutieuse des ingrédients, des recettes uniques et une conception esthétique. Nos projets consistent à développer des desserts innovants qui ravissent par leur saveur et leur aspect. Chaque dessert est une petite œuvre d'art culinaire.</p>
+          <div class="cards">
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-1.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <button class="cards__item__btn">Voir le produit</button>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-2.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <button class="cards__item__btn">Voir le produit</button>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-3.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <button class="cards__item__btn">Voir le produit</button>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-4.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <button class="cards__item__btn">Voir le produit</button>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-5.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <button class="cards__item__btn">Voir le produit</button>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-1.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <button class="cards__item__btn">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <h2 class="section__title wow fadeInUp" data-wow-delay=".2s">Témoignages de clients</h2>
+          <div class="testimonials__carousel">
+            <div class="swiper carousel_testimonials">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide carousel__item wow fadeInUp" data-wow-delay=".2s">
+                  <p class="carousel__item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <div class="carousel__item__info">
+                    <div class="carousel__item__info_left">
+                      <img src="img/pictures/client-img-1.svg" alt="client-img">
+                      <div class="client">
+                        <h5>Paula Ramirez</h5>
+                        <ul class="carousel__item__info_stars">
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img class="carousel__item__info_right" src="img/logo/google.svg" alt="client-company-logo">
+                  </div>
+                </div>
+                <div class="swiper-slide carousel__item wow fadeInUp" data-wow-delay=".4s">
+                  <p class="carousel__item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <div class="carousel__item__info">
+                    <div class="carousel__item__info_left">
+                      <img src="img/pictures/client-img-1.svg" alt="client-img">
+                      <div class="client">
+                        <h5>Paula Ramirez</h5>
+                        <ul class="carousel__item__info_stars">
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img class="carousel__item__info_right" src="img/logo/google.svg" alt="client-company-logo">
+                  </div>
+                </div>
+                <div class="swiper-slide carousel__item">
+                  <p class="carousel__item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <div class="carousel__item__info">
+                    <div class="carousel__item__info_left">
+                      <img src="img/pictures/client-img-1.svg" alt="client-img">
+                      <div class="client">
+                        <h5>Paula Ramirez</h5>
+                        <ul class="carousel__item__info_stars">
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-star"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img class="carousel__item__info_right" src="img/logo/google.svg" alt="client-company-logo">
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination wow fadeIn" data-wow-delay=".8s"></div>
+            </div>
+
+            
+            <div class="carousel__btns wow fadeInUp" data-wow-delay=".2s">
+              <button class="carousel__btn carousel__btn_prev carousel_testimonials-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel__btn carousel__btn_next carousel_testimonials-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="container">
+          <h2 class="section__title text_center wow fadeInUp" data-wow-delay=".2s">Nos partenaires</h2>
+          <ul class="partners__box">
+            <li class=" wow fadeInUp" data-wow-delay=".2s">
+              <a href="#">
+                <img src="img/logo/partner-img.svg" alt="partner-img">
+              </a>
+            </li>
+            <li class=" wow fadeInUp" data-wow-delay=".3s">
+              <a href="#">
+                <img src="img/logo/partner-img.svg" alt="partner-img">
+              </a>
+            </li>
+            <li class=" wow fadeInUp" data-wow-delay=".4s">
+              <a href="#">
+                <img src="img/logo/partner-img.svg" alt="partner-img">
+              </a>
+            </li>
+            <li class=" wow fadeInUp" data-wow-delay=".5s">
+              <a href="#">
+                <img src="img/logo/partner-img.svg" alt="partner-img">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="section__title wow fadeInUp" data-wow-delay=".2s">FAQ</h2>
+          <div class="faq__box">
+            <ul class="faq__list">
+              <li class="faq-item wow fadeInLeft" data-wow-delay=".2s">
+                <div class="faq-item__question">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting ?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p class="faq-item__answer">Most manufacturers recommend at least once a year if not more. A lot depends on how much foot traffic you have, how often you vacuum and if you have pets or kids. If you need stains or odors that you cannot remove, then it is time to call for professional help.</p>
+              </li>
+              <li class="faq-item wow fadeInLeft" data-wow-delay=".3s">
+                <div class="faq-item__question">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting ?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p class="faq-item__answer">Most manufacturers recommend at least once a year if not more. A lot depends on how much foot traffic you have, how often you vacuum and if you have pets or kids. If you need stains or odors that you cannot remove, then it is time to call for professional help.</p>
+              </li>
+              <li class="faq-item wow fadeInLeft" data-wow-delay=".4s">
+                <div class="faq-item__question">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting ?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p class="faq-item__answer">Most manufacturers recommend at least once a year if not more. A lot depends on how much foot traffic you have, how often you vacuum and if you have pets or kids. If you need stains or odors that you cannot remove, then it is time to call for professional help.</p>
+              </li>
+              <li class="faq-item wow fadeInLeft" data-wow-delay=".5s">
+                <div class="faq-item__question">
+                  <span>Lorem Ipsum is simply dummy text of the printing and typesetting ?</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p class="faq-item__answer">Most manufacturers recommend at least once a year if not more. A lot depends on how much foot traffic you have, how often you vacuum and if you have pets or kids. If you need stains or odors that you cannot remove, then it is time to call for professional help.</p>
+              </li>
+            </ul>
+            <div class="faq__img wow fadeInUp" data-wow-delay=".2s">
+              <img src="img/pictures/faq-img.png" alt="faq-img">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container"> 
+            <div class="formed-box wow fadeInUp" data-wow-delay=".2s">
+              <div class="formed-box__info">
+                <h3 class="text_paris">Télécharger le catalogue ELS</h3>
+                <p>Commandez un rappel en un clic !</p>
+                <form class="formed-box__form">
+                  <input type="text" placeholder="Votre nom">
+                  <input type="number" placeholder="Numéro de téléphone">
+                  <button class="btn btn_primary">Envoyer la demande</button>
+                </form>
+              </div>
+              <div class="formed-box__img formed-catalog wow fadeInRight" data-wow-delay=".2s">
+                <img src="img/pictures/catalog-img.png" alt="formed-box-img">
+                <img src="img/pictures/catalog-img-botom.png" alt="formed-box-img">
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__box">
+            <div class="contact__img wow zoomIn" data-wow-delay=".2s">
+              <img src="img/pictures/contact-img.png" alt="contact-img">
+            </div>
+            <div class="contact__info wow fadeInRight" data-wow-delay=".4s">
+              <h2>CONTACT</h2>
+              <p>20 rue Saint-Martin <br> 75004 Paris</p>
+              <p>+33 (1) 42 72 25 76 <br> Evenement luxe@ducasse-paris.com</p>
+              <hr>
+              <p>Ouvert tous les jours <br>
+                Déjeuner de 12h00 à 14h00 <br>
+                Dîner de 19h00 à 22h00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__box wow fadeInUp" data-wow-delay=".2s">
+          <div class="footer__logo">
+            <img src="img/logo/logo-brand_rectangle.svg" alt="logo">
+            <ul class="footer__socials">
+              <li>
+                <a href="#">
+                  <img src="img/icon/telegram.svg" alt="social-icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icon/instagram.svg" alt="social-icon">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icon/facebook.svg" alt="social-icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__nav__list">
+              <li>
+                <a href="#">À propos de nous</a>
+              </li>
+              <li>
+                <a href="#">Nouvelles et promotion</a>
+              </li>
+              <li>
+                <a href="#">Menu</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+            <div class="footer__btns">
+            <button class="btn btn_primary">Réservation</button>
+            <button class="btn btn_secondary">Privatisation</button>
+          </div>
+        </div>
+
+        <div class="footer__copy wow fadeInUp" data-wow-delay=".2s">
+          <p>© USL 2024. Все права защищены.</p>
+          <p>created by NOVAS</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carousels.js"></script>
+  </body>
+</html>

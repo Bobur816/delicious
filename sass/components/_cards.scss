@@ -1,0 +1,52 @@
+.cards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  &__item {
+    // background-color: red;
+    height: 30rem;
+    &__img {
+      width: 100%;
+      height: 16.85rem;
+      img {
+        @include fullImg;
+      }
+    }
+
+    &__info {
+      border: 1px solid var(--color-primary-dark);
+      padding: 1.5rem;
+
+      h3 {
+        font-family: "Hello Paris";
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--color-primary-dark);
+      }
+
+      p {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6rem; /* 160% */
+        margin: 1rem 0 1.6rem 0;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      padding: 0.9rem 0;
+      font-weight: 500;
+      border: 1px solid var(--color-primary-dark);
+      color: var(--color-primary-dark);
+
+      &:hover {
+        background-color: var(--color-primary-dark);
+        color: var(--color-white);
+      }
+    }
+  }
+}

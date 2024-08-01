@@ -1,0 +1,23 @@
+.page-head {
+  margin-top: 13.5rem;
+  //   background-color: red;
+
+  &__box {
+    // background-color: blue;
+    height: 18.45rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 2.5rem;
+    color: var(--color-white);
+  }
+
+  &__bg {
+    position: absolute;
+    @include absCenter;
+    @include fullImg;
+    z-index: -1;
+  }
+}

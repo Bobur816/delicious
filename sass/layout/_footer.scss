@@ -1,0 +1,59 @@
+.footer {
+  &__box {
+    padding: 5.8rem 0 3.65rem 0;
+    display: grid;
+    grid-template-columns: 7.65rem 2fr 13rem;
+    gap: 10rem;
+    border-bottom: 1px solid var(--color-primary-dark);
+  }
+
+  &__logo {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__socials {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    a {
+      display: block;
+      width: 1.2rem;
+      aspect-ratio: 1/1;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__nav__list {
+    // background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.1rem;
+
+    button {
+      padding: 0.8rem;
+      width: 100%;
+    }
+  }
+
+  &__copy {
+    padding: 2rem 0;
+    @include spaced;
+  }
+}

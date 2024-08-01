@@ -1,0 +1,15 @@
+.btn {
+  &_primary {
+    color: var(--color-white);
+    background-color: var(--color-primary-dark);
+  }
+  &_secondary {
+    color: var(--color-primary-dark);
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark);
+  }
+  &_white {
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+  }
+}
