@@ -43,16 +43,16 @@
             <nav>
               <ul class="header__nav__list">
                 <li class="header__nav__list-item">
-                  <a class="header__nav__link active" href="about.html">À propos de nous</a>
+                  <a class="header__nav__link" href="about.html">À propos de nous</a>
                 </li>
                 <li class="header__nav__list-item parrent">
-                  <a class="header__nav__link" href="menu.html">Menu <i class="fa-solid fa-chevron-down"></i></a>
+                  <a class="header__nav__link active" href="#">Menu <i class="fa-solid fa-chevron-down"></i></a>
                   <ul class="submenu">
                     <li>
                       <a href="#">lorem ipsum</a>
                     </li>
                     <li>
-                      <a href="menu-items.html">À la carte</a>
+                      <a href="#">lorem ipsum</a>
                     </li>
                     <li>
                       <a href="#">lorem ipsum</a>
@@ -94,7 +94,7 @@
                       <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>    
                     </li>
                   </ul>
-                  <a href="orders.html" class="btn_white">Envoyer</a>
+                  <button class="btn_white">Envoyer</button>
 
                 </div>
               </div>
@@ -111,83 +111,80 @@
     <main>
       <section class="page-head">
         <div class="container">
-          <div class="page-head__wrapper back-line">
+          <div class="page-head__wrapper back-line wow fadeInUp">
 
-            <div class="page-head__box" >
-              <h2 class="section__header">À propos de nous</h2>
-              <img class="page-head__bg" src="img/pictures/about-head-img.png" alt="page-head-img">
+            <div class="page-head__box  " data-wow-delay=".2s" >
+              <h2 class="section__header">À la carte</h2>
+              <img class="page-head__bg" src="img/pictures/page-head-3.png" alt="page-head-img">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="history">
+      <section class="meal-cards">
         <div class="container">
-          <div class="history__box">
-            <div class="history__left info">
-             <h2 class="section__title">UNE LONGUE HISTOIRE</h2>
-             <p class="history__paragraph">La conception de desserts nécessite une sélection minutieuse des ingrédients, des recettes uniques et une conception esthétique. Nos projets consistent à développer des desserts innovants qui ravissent par leur saveur et leur aspect. Chaque dessert est une petite œuvre d'art culinaire.</p>
-            </div>
-            <div class="history__right history__img">
-              <img src="img/pictures/history-img-1.png" alt="history-img">
-            </div>
-          </div>
-          <div class="history__box">
-            <div class="history__left history__img">
-              <img src="img/pictures/history-img-1.png" alt="history-img">
-            </div>
-            <div class="history__right info">
-             <h2 class="section__title">UNE LONGUE HISTOIRE</h2>
-             <p class="history__paragraph">La conception de desserts nécessite une sélection minutieuse des ingrédients, des recettes uniques et une conception esthétique. Nos projets consistent à développer des desserts innovants qui ravissent par leur saveur et leur aspect. Chaque dessert est une petite œuvre d'art culinaire.</p>
-            </div>
-          </div>
-          <div class="history__box_wide">
-            <div class="history__img">
-              <img src="img/pictures/history-img-3.png" alt="history-img">
-            </div>
-            <div class=" info">
-             <h2 class="section__title">UNE LONGUE HISTOIRE</h2>
-             <p class="history__paragraph">La conception de desserts nécessite une sélection minutieuse des ingrédients, des recettes uniques et une conception esthétique. Nos projets consistent à développer des desserts innovants qui ravissent par leur saveur et leur aspect. Chaque dessert est une petite œuvre d'art culinaire.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="menu-items">
-        <div class="container">
-          <h2 class="section__title wow fadeInUp" data-wow-delay=".2s">galerie</h2>
-
-          <div class="menu__carousel wow fadeInUp" data-wow-delay=".2s">
-            <div class="swiper carousel_menu_2">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <a href="#" class="swiper-slide carousel__item">
-                  <img class="carousel__item__bg" src="img/pictures/menu_2-img-1.png" alt="menu-img">
-                  <!-- <div class="carousel__item__info">
-                    <h4 class="carousel__item__title">À la carte</h4>
-                  </div> -->
-                </a>
-                <a href="#" class="swiper-slide carousel__item">
-                  <img class="carousel__item__bg" src="img/pictures/menu_2-img-2.png" alt="menu-img">
-                </a>
-                <a href="#" class="swiper-slide carousel__item">
-                  <img class="carousel__item__bg" src="img/pictures/menu_2-img-3.png" alt="menu-img">
-                </a>
-                <a href="#" class="swiper-slide carousel__item">
-                  <img class="carousel__item__bg" src="img/pictures/menu_2-img-1.png" alt="menu-img">
-                </a>
+          <p class="meal-cards__right-text">La conception de desserts nécessite une sélection minutieuse des ingrédients, des recettes uniques et une conception esthétique. Nos projets consistent à développer des desserts innovants qui ravissent par leur saveur et leur aspect. Chaque dessert est une petite œuvre d'art culinaire.</p>
+          <div class="cards">
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-1.png" alt="card-img">
               </div>
-
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <a href="menu-item-single.html" class="cards__item__btn btn_secondary ">Voir le produit</a>
+              </div>
             </div>
-            <div class="carousel__btns wow fadeInUp" data-wow-delay=".2s">
-              <button class="carousel__btn carousel__btn_prev carousel_menu-prev">
-                <i class="fa-solid fa-chevron-left"></i>
-              </button>
-              <button class="carousel__btn carousel__btn_next carousel_menu-next">
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
-            </div>  
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-2.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <a href="menu-item-single.html" class="cards__item__btn btn_secondary">Voir le produit</a>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-3.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <a href="menu-item-single.html" class="cards__item__btn btn_secondary">Voir le produit</a>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-4.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <a href="menu-item-single.html" class="cards__item__btn btn_secondary">Voir le produit</a>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-5.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <a href="menu-item-single.html" class="cards__item__btn btn_secondary">Voir le produit</a>
+              </div>
+            </div>
+            <div class="cards__item">
+              <div class="cards__item__img">
+                <img src="img/pictures/card-img-1.png" alt="card-img">
+              </div>
+              <div class="cards__item__info">
+                <h3>À la carte</h3>
+                <p>6,72€ HT</p>
+                <a href="menu-item-single.html" class="cards__item__btn btn_secondary">Voir le produit</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

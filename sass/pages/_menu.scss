@@ -62,7 +62,7 @@
   }
 }
 
-// _____________________________for menu-2.html________________________________
+// _____________________________for menu-items.html________________________________
 
 .meal-cards {
   background-color: var(--color-primary);
@@ -76,5 +76,54 @@
     line-height: 1.6rem; /* 160% */
     width: 31rem;
     margin-left: auto;
+  }
+}
+
+.menu-item {
+  padding-top: 11.7rem;
+  // background-color: red;
+
+  &__box {
+    // background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__img {
+    width: 32.5rem;
+    height: 28.35rem;
+    // background-color: yellow;
+
+    img {
+      @include fullImg;
+    }
+  }
+
+  &__info {
+    width: 50%;
+
+    h3 {
+      font-family: "Hello Paris";
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: var(--color-primary-dark);
+    }
+
+    p {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      margin: 1.6rem 0;
+      line-height: 1.6rem; /* 160% */
+    }
+
+    button {
+      padding: 0.9rem 4rem;
+      margin-top: 2rem;
+    }
   }
 }

@@ -2,11 +2,24 @@
   &_primary {
     color: var(--color-white);
     background-color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-primary-dark);
+      border: 1px solid var(--color-primary-dark);
+    }
   }
   &_secondary {
     color: var(--color-primary-dark);
     background-color: transparent;
     border: 1px solid var(--color-primary-dark);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+      color: var(--color-white);
+    }
   }
   &_white {
     background-color: var(--color-white);
