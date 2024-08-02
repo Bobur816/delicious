@@ -13,6 +13,12 @@ $(window).on("load", () => {
       : $(".header").removeClass("header-scrolled");
   });
 
+  // ____________________________preloader_______________________
+
+  setTimeout(() => {
+    $(".preloader").fadeOut(1000);
+  }, 500);
+
   //____________________feedback__________________________
 
   $(".feedback__open").on("click", function () {
