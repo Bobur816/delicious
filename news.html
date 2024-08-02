@@ -19,6 +19,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+
+    
+    <!-- Feedback  -->
+
+    <div class="feedback">
+      <div class="feedback__content">
+        <button class="feedback__close"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="feedback__wrap">
+          <h2>Application</h2>
+          <p>Laissez vos coordonnées et notre responsable vous fournira de plus amples informations.</p>
+          <form class="feedback__form">
+            <input class="form_name" type="text" placeholder="Nom" required>
+            <input class="form_tel" type="number" placeholder="Numéro de téléphone" required>
+            <button class="btn_primary">Envoyer</button>
+          </form>
+          <p>Je consens au traitement de mes données personnelles</p>
+        </div>
+
+        <div class="feedback__done">
+          <h2>Application</h2>
+          <div class="feedback__done-checked">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>Nous avons bien reçu votre demande et nous vous contacterons dans les plus brefs délais.</p>
+        </div>
+      </div>
+    </div>
     <!-- Header  -->
     <header class="header">
       <!-- Header copy  -->
@@ -100,7 +129,7 @@
               </div>
 
               
-              <button class="btn btn_primary">+998(99) 999 99 99</button>
+              <button class="feedback__open btn btn_primary">+998(99) 999 99 99</button>
             </div>
           </div>
         </div>

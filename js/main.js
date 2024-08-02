@@ -13,6 +13,42 @@ $(window).on("load", () => {
       : $(".header").removeClass("header-scrolled");
   });
 
+  //____________________feedback__________________________
+
+  $(".feedback__open").on("click", function () {
+    $(".feedback").toggleClass("active");
+  });
+  $(".feedback__close").on("click", function () {
+    $(".feedback").removeClass("active");
+
+    setTimeout(() => {
+      $(".feedback__wrap").show();
+      $(".feedback__done").hide();
+    }, 1000);
+  });
+
+  $(".feedback__form").on("submit", function (e) {
+    e.preventDefault();
+    $(".feedback__wrap").hide();
+    $(".feedback__done").show();
+  });
+
+  $(".feedback").click((e) => {
+    let div = $(".feedback__content");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      $(".feedback__content").removeClass("active");
+      setTimeout(() => {
+        $(".feedback").removeClass("active");
+      }, 200);
+      setTimeout(() => {
+        $(".feedback__done").hide();
+        $(".feedback__wrap").show();
+        $(".form_tel").val("");
+        $(".form_name").val("");
+      }, 700);
+    }
+  });
+
   // ___________________selecteds_____________________
 
   $(".selecteds-btn").on("click", function () {
