@@ -56,6 +56,58 @@
     </div>
 
 
+    <!-- Mobile manu   -->
+    <div class="mobile-menu">
+      <div class="mobile-menu__box">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__list-item">
+            <a class="mobile-menu__link" href="about.html">À propos de nous</a>
+          </li>
+          <li class="mobile-menu__list-item ">
+            <a class="mobile-menu__link">Menu <i class="fa-solid fa-chevron-right"></i></a>
+            <ul class="mobile-submenu">
+              <li>
+                <a href="#">lorem ipsum</a>
+              </li>
+              <li>
+                <a href="menu-items.html">À la carte</a>
+              </li>
+              <li>
+                <a href="#">lorem ipsum</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a class="mobile-menu__link" href="news.html">Nouvelles et promotion</a>
+          </li>
+          <li class="mobile-menu__list-item">
+            <a class="mobile-menu__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__socials">
+          <li>
+            <a href="#">
+              <img src="img/icon/telegram.svg" alt="social-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon/instagram.svg" alt="social-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icon/facebook.svg" alt="social-icon">
+            </a>
+          </li>
+        </ul>
+
+        <button class="mobile-menu__close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+
+
 
     <!-- Header  -->
     <header class="header">
@@ -105,11 +157,12 @@
                 </li>
               </ul>
             </nav>
+
             <div class="header__control">
-              <button>
+              <button class="icon">
                 <img src="img/icon/search-icon.svg" alt="search-icon">
               </button>
-              <div  class="selecteds">
+              <div  class="icon selecteds">
                 <button class="selecteds-btn">
                   <img src="img/icon/theme-icon.svg" alt="theme-icon"> 
                 </button>
@@ -140,9 +193,17 @@
               
               <button class="feedback__open btn btn_primary">+998(99) 999 99 99</button>
             </div>
+
+          
+            <div class="header__mobile">
+              <button class="mobile-menu__open"><i class="fa-solid fa-bars"></i></button>
+              <button class="feedback__open" ><i class="fa-solid fa-phone"></i></button>
+            </div>
           </div>
         </div>
       </div>
+
+      
       
     </header>
 
@@ -151,9 +212,8 @@
         <div class="container">
           <div class="head__box" >
             <div class="swiper carousel_head">
-              <!-- Additional required wrapper -->
+
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide carousel__item">
                   <img src="img/pictures/head-carousel-img1.png" class="carousel__item__bg" alt="carousel-img">
                   <div class="carousel__item__info">
@@ -185,10 +245,7 @@
                   </div>
                 </div>
               </div>
-              <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
-            
-            
             </div>
           </div>
         </div>
@@ -217,8 +274,9 @@
       </section>
 
       <section class="projects">
-        <img class="projects__box-img  wow fadeInLeft" data-wow-delay=".2s" src="img/pictures/projects__box-img-left.png" alt="projects-img">
-        <img class="projects__box-img  wow fadeInRight" data-wow-delay=".4s" src="img/pictures/projects__box-img-right.png" alt="projects-img">
+        <div class="projects__img">
+          <img class="projects__box-img " src="img/pictures/projects__box-img-left.png" alt="projects-img">
+        </div>
         <div class="container">
 
           <div class="projects__box wow fadeInUp" data-wow-delay=".5s">
@@ -231,9 +289,13 @@
             <button class="btn btn_primary">Découvrir notre histoire</button>
           </div>
         </div>
-      </section>
+        <div class="projects__img">
+          <img class="projects__box-img" src="img/pictures/projects__box-img-right.png" alt="projects-img">
+        </div>
 
-      <section class="section-4">
+      </section> 
+
+    <section class="section-4">
         <div class="container">
           <div class="formed-box__wrapper wow fadeInUp" data-wow-delay=".2s">
             <div class="formed-box">
@@ -266,9 +328,7 @@
 
           <div class="menu__carousel wow fadeInUp" data-wow-delay=".2s">
             <div class="swiper carousel_menu">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide carousel__item">
                   <img class="carousel__item__bg" src="img/pictures/menu_carousel-img-1.png" alt="menu-img">
                   <div class="carousel__item__info">
@@ -305,8 +365,6 @@
                     <h4 class="carousel__item__title">Les desserts</h4>
                   </div>
                 </div>
-
-
               </div>
 
             </div>
@@ -326,15 +384,21 @@
         <div class="container">
           <div class="features__box">
             <div class="features__left wow fadeInLeft" data-wow-delay=".2s">
-              <h2 class="section__title">Caractéristiques</h2>
-              <p>Nos produits se caractérisent par des ingrédients naturels de haute qualité et des combinaisons de saveurs uniques. Nous sélectionnons soigneusement chaque ingrédient pour garantir un équilibre parfait entre la saveur et la texture. Chaque produit est créé avec amour et dans le souci du détail</p>
-              <button class="btn btn_primary">Lire la suite</button>
+              <div>
+                <h2 class="section__title">Caractéristiques</h2>
+                <p>Nos produits se caractérisent par des ingrédients naturels de haute qualité et des combinaisons de saveurs uniques. Nous sélectionnons soigneusement chaque ingrédient pour garantir un équilibre parfait entre la saveur et la texture. Chaque produit est créé avec amour et dans le souci du détail</p>
+                <button class="btn btn_primary">Lire la suite</button>
+              </div>
               <div class="img-box wow fadeInUp" data-wow-delay="1s">
                 <img src="img/pictures/features-img-1.png" alt="festures-img">
               </div>
             </div>
             <div class="features__right wow fadeInRight" data-wow-delay=".4s">
               <img src="img/pictures/features-img-2.png" alt="features-img">
+            </div>
+
+            <div class="features__bottom fadeInUp" data-wow-delay="1s">
+              <img src="img/pictures/features-img-1.png" alt="festures-img">
             </div>
           </div>
         </div>
@@ -345,9 +409,7 @@
           <h2 class="section__title wow fadeInUp" data-wow-delay=".2s">Nouvelles et promotions</h2>
           <div class="news__carousel">
             <div class="swiper carousel_news">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide news-card  wow fadeInUp" data-wow-delay=".6s">
                   <img class="news-card__bg" src="img/pictures/menu_carousel-img-1.png" alt="menu-img">
                   <div class="news-card__info">
@@ -442,9 +504,9 @@
           <h2 class="section__title wow fadeInUp" data-wow-delay=".2s">Témoignages de clients</h2>
           <div class="testimonials__carousel">
             <div class="swiper carousel_testimonials">
-              <!-- Additional required wrapper -->
+              
               <div class="swiper-wrapper">
-                <!-- Slides -->
+                
                 <div class="swiper-slide carousel__item wow fadeInUp" data-wow-delay=".2s">
                   <p class="carousel__item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   <div class="carousel__item__info">
@@ -533,7 +595,6 @@
                   </div>
                 </div>
               </div>
-              <!-- If we need pagination -->
               <div class="swiper-pagination wow fadeIn" data-wow-delay=".8s"></div>
             </div>
 
@@ -621,6 +682,7 @@
 
       <section class="catalog">
         <div class="container"> 
+         
             <div class="formed-box wow fadeInUp" data-wow-delay=".2s">
               <div class="formed-box__info">
                 <h3 class="text_paris">Télécharger le catalogue ELS</h3>
@@ -658,6 +720,8 @@
         </div>
       </section>
     </main>
+
+
     <footer class="footer">
       <div class="container">
         <div class="footer__box">

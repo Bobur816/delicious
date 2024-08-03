@@ -19,6 +19,23 @@ $(window).on("load", () => {
     $(".preloader").fadeOut(1000);
   }, 500);
 
+  //____________________mobile menu__________________________
+
+  $(".mobile-menu__link i").on("click", function () {
+    $(this).parent().toggleClass("active");
+    $(".mobile-submenu").slideToggle(400);
+  });
+
+  $(".mobile-menu__open").on("click", function () {
+    $(".mobile-menu").toggleClass("active");
+    $(".mobile-menu__box").slideToggle(400);
+  });
+
+  $(".mobile-menu__close").on("click", function () {
+    $(".mobile-menu").toggleClass("active");
+    $(".mobile-menu__box").slideToggle(400);
+  });
+
   //____________________feedback__________________________
 
   $(".feedback__open").on("click", function () {
