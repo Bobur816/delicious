@@ -1,0 +1,33 @@
+.search {
+  //   background-color: red;
+  @include center;
+  position: relative;
+
+  &__bar__wrapper {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    display: none;
+    border: 1px solid var(--color-primary-dark);
+    z-index: 10;
+  }
+
+  &__bar {
+    // background-color: blue;
+    width: fit-content;
+    // gap: 2rem;
+    display: flex;
+    // padding: 4rem;
+    input {
+      padding: 0.4rem 0.4rem;
+      outline: none;
+      border: none;
+    }
+
+    button {
+      padding: 0.4rem 1rem;
+      color: var(--color-white);
+      background-color: var(--color-primary-dark);
+    }
+  }
+}

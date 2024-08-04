@@ -21,7 +21,7 @@ $(window).on("load", () => {
 
   //____________________mobile menu__________________________
 
-  $(".mobile-menu__link i").on("click", function () {
+  $(".mobile-menu__list-item .btn i").on("click", function () {
     $(this).parent().toggleClass("active");
     $(".mobile-submenu").slideToggle(400);
   });
@@ -34,6 +34,7 @@ $(window).on("load", () => {
   $(".mobile-menu__close").on("click", function () {
     $(".mobile-menu").toggleClass("active");
     $(".mobile-menu__box").slideToggle(400);
+    $(".mobile-menu__bars").slideUp(100);
   });
 
   //____________________feedback__________________________
@@ -76,6 +77,14 @@ $(window).on("load", () => {
 
   $(".selecteds-btn").on("click", function () {
     $(".selecteds__box").toggleClass("active");
+    $(".search__bar__wrapper").slideUp(200);
+  });
+
+  $("body").on("click", function (e) {
+    let div = $(".selecteds");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      $(".selecteds__box").removeClass("active");
+    }
   });
 
   // ___________________faq_____________________
@@ -90,6 +99,34 @@ $(window).on("load", () => {
       $(this).addClass("active");
       $(this).find(".faq-item__answer").slideDown(400);
     }
+  });
+
+  // ___________________search_____________________
+
+  $(".search__btn").on("click", function () {
+    $(".search__bar__wrapper").slideToggle(200);
+    $(".selecteds__box").removeClass("active");
+  });
+
+  $("body").on("click", function (e) {
+    let div = $(".search");
+    if (!div.is(e.target) && div.has(e.target).length === 0) {
+      $(".search__bar__wrapper").slideUp(200);
+    }
+  });
+
+  // mobile - search__open;
+
+  $(".mobile-search__open").on("click", function () {
+    $(".mobile-menu__bars").slideToggle(200);
+    $(".selecteds__box").removeClass("active");
+  });
+
+  //_________________________submenu-footer___________________
+
+  $(".parrent-footer i").on("click", function () {
+    $(this).parent().toggleClass("active");
+    $(".footer-submenu").slideToggle(400);
   });
 
   new WOW({

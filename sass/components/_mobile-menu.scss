@@ -23,7 +23,7 @@
 
   &__box {
     background-color: var(--color-white);
-    padding: 7rem 0;
+    // padding: 8.3rem 0;
     height: 85%;
     @include spaced;
     flex-direction: column;
@@ -32,6 +32,48 @@
     display: none;
   }
 
+  &__content {
+    // background-color: yellow;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 8.3rem 0 0 0;
+    @include center;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  &__controls {
+    // background-color: red;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include spaced;
+    padding: 2rem 1.5rem;
+  }
+
+  &__bars {
+    // background-color: red;
+    width: 90%;
+    @include absCenterX;
+    top: 5rem;
+    display: none;
+  }
+
+  &__search-bar {
+    border: 1px solid var(--color-primary-dark);
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    input {
+      padding: 0.8rem;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      background-color: var(--color-primary-dark);
+      color: var(--color-white);
+    }
+  }
   &__list {
     @include center;
     flex-direction: column;
@@ -46,34 +88,41 @@
       &.parrent {
         height: fit-content;
       }
+
+      .btn {
+        @include center;
+        align-items: center;
+        gap: 0.5rem;
+
+        i {
+          font-size: 1.1rem;
+          margin-left: 0.5rem;
+          transition: all 0.3s;
+        }
+
+        &.active i {
+          transform: rotate(90deg);
+        }
+      }
     }
   }
 
   &__link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
 
-    i {
-      font-size: 1.5rem;
-      margin-left: 0.5rem;
-      transition: all 0.3s;
-    }
-
-    &.active i {
-      transform: rotate(90deg);
-    }
+  &__brand {
+    // position: absolute;
+    width: 100%;
+    padding: 1.5rem 0 4rem 0;
+    @include center;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   &__socials {
-    position: absolute;
-    bottom: 2rem;
     @include center;
-    @include absCenterX;
-    gap: 2.5rem;
-    margin-top: 10rem;
-
-    img {
-      width: 3rem;
-    }
+    gap: 1.8rem;
   }
 
   &__close {
@@ -86,19 +135,22 @@
     border-radius: 50%;
     i {
       font-size: 1.5rem;
+      color: var(--color-primary-dark);
     }
   }
 }
 
 .mobile-submenu {
-  background-color: rgb(226, 226, 226);
+  // background-color: rgb(226, 226, 226);
   width: 100%;
   display: none;
+  padding: 0.5rem;
   //   height: 5rem;
   a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
     // background-color: var(--color-white);
-    padding: 1rem;
+    padding: 0.5rem;
+    color: #434343;
   }
 }

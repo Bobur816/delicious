@@ -48,3 +48,25 @@
     margin-bottom: 1.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .contacts {
+    margin-top: 10rem;
+
+    &__box {
+      flex-direction: column;
+      gap: 3rem;
+      & > div {
+        width: 100%;
+      }
+    }
+
+    &__map {
+      height: 40rem;
+    }
+
+    &__info {
+      padding: 0;
+    }
+  }
+}

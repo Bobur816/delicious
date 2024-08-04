@@ -79,6 +79,7 @@
     height: 100%;
     position: absolute;
     @include absCenter;
+    z-index: 1;
     img {
       height: 100%;
     }
@@ -120,7 +121,6 @@
   }
 
   &__mobile {
-    // background-color: yellow;
     width: 100%;
     @include absCenterY;
     @include spaced;
@@ -176,6 +176,30 @@
       &:hover {
         color: var(--color-primary-dark);
         border-color: var(--color-primary-dark);
+      }
+    }
+  }
+}
+
+.parrent-footer {
+  .footer-submenu {
+    display: none;
+
+    li {
+      margin: 0.4rem 0;
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    i {
+      transition: all 0.3s;
+    }
+    &.active {
+      i {
+        transform: rotate(180deg);
       }
     }
   }

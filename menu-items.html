@@ -51,52 +51,77 @@
      <!-- Mobile manu   -->
      <div class="mobile-menu">
       <div class="mobile-menu__box">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__list-item">
-            <a class="mobile-menu__link" href="about.html">À propos de nous</a>
-          </li>
-          <li class="mobile-menu__list-item ">
-            <a class="mobile-menu__link">Menu <i class="fa-solid fa-chevron-right"></i></a>
-            <ul class="mobile-submenu">
-              <li>
-                <a href="#">lorem ipsum</a>
-              </li>
-              <li>
-                <a href="menu-items.html">À la carte</a>
-              </li>
-              <li>
-                <a href="#">lorem ipsum</a>
-              </li>
-            </ul>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a class="mobile-menu__link" href="news.html">Nouvelles et promotion</a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a class="mobile-menu__link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+        <div class="mobile-menu__controls"> 
+          <button class="icon mobile-search__open">
+            <img src="img/icon/search-icon.svg" alt="search-icon">
+          </button>
+          <a href="orders.html" class="selecteds-btn">
+            <img src="img/icon/theme-icon.svg" alt="theme-icon"> 
+          </a>   
+        </div>
+        <div class="mobile-menu__bars">
+          <div class="mobile-menu__search-bar">
+            <input type="text" placeholder="search">
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="mobile-menu__content">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__link" href="about.html">À propos de nous</a>
+            </li>
+            <li class="mobile-menu__list-item ">
+              <div class="btn">
+                <a href="menu.html" class="mobile-menu__link">Menu </a>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+              <ul class="mobile-submenu">
+                <li>
+                  <a href="#">lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="menu-items.html">À la carte</a>
+                </li>
+                <li>
+                  <a href="#">lorem ipsum</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__link" href="news.html">Nouvelles et promotion</a>
+            </li>
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+  
+          <div class="mobile-menu__brand">
+            <img src="img/logo/logo-brand_rectangle.svg" alt="logo">
+            <ul class="mobile-menu__socials">
+            <li>
+              <a href="#">
+                <img src="img/icon/telegram.svg" alt="social-icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icon/instagram.svg" alt="social-icon">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icon/facebook.svg" alt="social-icon">
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+        
 
-        <ul class="mobile-menu__socials">
-          <li>
-            <a href="#">
-              <img src="img/icon/telegram.svg" alt="social-icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icon/instagram.svg" alt="social-icon">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icon/facebook.svg" alt="social-icon">
-            </a>
-          </li>
-        </ul>
         <button class="mobile-menu__close"><i class="fa-solid fa-xmark"></i></button>
       </div>
     </div>
+
 
     <!-- Header  -->
     <header class="header">
@@ -148,9 +173,19 @@
             </nav>
 
             <div class="header__control">
-              <button>
-                <img src="img/icon/search-icon.svg" alt="search-icon">
-              </button>
+              <div class="icon search">
+                <button class="search__btn">
+                  <img src="img/icon/search-icon.svg" alt="search-icon">
+                </button>
+                <div class="search__bar__wrapper">
+                  <div class="search__bar">
+                    <input type="text" placeholder="search">
+                    <button>
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
               <div  class="selecteds">
                 <button class="selecteds-btn">
                   <img src="img/icon/theme-icon.svg" alt="theme-icon"> 
@@ -174,7 +209,7 @@
                       <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>    
                     </li>
                   </ul>
-                  <button class="btn_white">Envoyer</button>
+                  <a href="orders.html" class="btn_white">Envoyer</a>
 
                 </div>
               </div>
@@ -522,14 +557,16 @@
           <div class="footer__nav">
             <ul class="footer__nav__list">
               <li>
-                <a href="#">À propos de nous</a>
+                <a href="about.html">À propos de nous</a>
               </li>
               <li>
-                <a href="#">Nouvelles et promotion</a>
+                <a href="news.html">Nouvelles et promotion </a>
               </li>
-              <li class="parrent">
-                <a href="#">Menu <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="submenu">
+              <li class="parrent-footer">
+                <div class="btn">
+                  <a href="menu.html">Menu</a>
+                  <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="footer-submenu">
                   <li>
                     <a href="#">lorem ipsum</a>
                   </li>

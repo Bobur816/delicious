@@ -56,7 +56,10 @@
             <a class="mobile-menu__link" href="about.html">À propos de nous</a>
           </li>
           <li class="mobile-menu__list-item ">
-            <a class="mobile-menu__link">Menu <i class="fa-solid fa-chevron-right"></i></a>
+            <div class="btn">
+              <a href="menu.html" class="mobile-menu__link">Menu </a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
             <ul class="mobile-submenu">
               <li>
                 <a href="#">lorem ipsum</a>
@@ -147,9 +150,19 @@
               </ul>
             </nav>
             <div class="header__control">
-              <button>
-                <img src="img/icon/search-icon.svg" alt="search-icon">
-              </button>
+              <div class="icon search">
+                <button class="search__btn">
+                  <img src="img/icon/search-icon.svg" alt="search-icon">
+                </button>
+                <div class="search__bar__wrapper">
+                  <div class="search__bar">
+                    <input type="text" placeholder="search">
+                    <button>
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </div>
               <div  class="selecteds">
                 <button class="selecteds-btn">
                   <img src="img/icon/theme-icon.svg" alt="theme-icon"> 
@@ -173,7 +186,7 @@
                       <button class="remove-btn"><i class="fa-solid fa-xmark"></i></button>    
                     </li>
                   </ul>
-                  <button class="btn_white">Envoyer</button>
+                  <a href="orders.html" class="btn_white">Envoyer</a>
 
                 </div>
               </div>
@@ -232,7 +245,6 @@
       </section>
 
 
-
       <section class="contact">
         <div class="container">
           <div class="contact__box">
@@ -251,6 +263,8 @@
           </div>
         </div>
       </section>
+
+
     </main>
     <footer class="footer">
       <div class="container">
@@ -278,14 +292,16 @@
           <div class="footer__nav">
             <ul class="footer__nav__list">
               <li>
-                <a href="#">À propos de nous</a>
+                <a href="about.html">À propos de nous</a>
               </li>
               <li>
-                <a href="#">Nouvelles et promotion</a>
+                <a href="news.html">Nouvelles et promotion </a>
               </li>
-              <li class="parrent">
-                <a href="#">Menu <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="submenu">
+              <li class="parrent-footer">
+                <div class="btn">
+                  <a href="menu.html">Menu</a>
+                  <i class="fa-solid fa-chevron-down"></i></div>
+                <ul class="footer-submenu">
                   <li>
                     <a href="#">lorem ipsum</a>
                   </li>

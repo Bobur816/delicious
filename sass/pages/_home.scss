@@ -239,6 +239,13 @@
       margin-top: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    padding-top: 4rem;
+    &__carousel {
+      margin-top: 3rem;
+    }
+  }
 }
 
 .partners {
@@ -372,11 +379,19 @@
 .catalog {
   padding-top: 9.65rem;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding-top: 5rem;
+  }
 }
 
 .contact {
   margin-top: 11.2rem;
   background-color: var(--color-primary);
+
+  @media (max-width: 768px) {
+    margin-top: 8rem;
+  }
 
   &__box {
     display: grid;
@@ -393,7 +408,10 @@
   &__img {
     transform: translateY(-3.6rem);
     position: relative;
-    padding: 0 0.6rem;
+
+    @media (max-width: 768px) {
+      padding: 0 0.6rem;
+    }
 
     &::after {
       content: "";

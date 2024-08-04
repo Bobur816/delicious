@@ -168,6 +168,12 @@ $(window).on("load", () => {
     // And if we need scrollbar
 
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      500: {
+        slidesPerView: 1.5,
+      },
       640: {
         slidesPerView: 2,
       },

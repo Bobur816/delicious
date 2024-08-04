@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
+
   &__item {
     // background-color: red;
     height: 30rem;
@@ -49,5 +50,23 @@
       padding: 0.9rem 0;
       font-weight: 500;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    &__item__info {
+      padding: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .cards {
+    grid-template-columns: 1fr;
   }
 }

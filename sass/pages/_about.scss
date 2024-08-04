@@ -61,3 +61,78 @@
 .menu-items {
   margin-top: 5rem;
 }
+
+@media (max-width: 768px) {
+  .history {
+    padding: 8rem 0 2rem 0;
+    margin-top: -7.7rem;
+    overflow: hidden;
+
+    &__box {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 2rem 0;
+
+      & > div {
+        width: 100%;
+      }
+
+      &_wide {
+        grid-template-columns: 100%;
+
+        .history__img {
+          height: 24rem;
+          position: relative;
+
+          img {
+            @include absCenterX;
+            width: 100vw;
+          }
+        }
+
+        .info {
+          padding: 0;
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    &__left {
+      &.history__img {
+        left: -5rem;
+      }
+      &.info {
+        padding: 0;
+      }
+    }
+
+    &__right {
+      &.history__img {
+        right: -5rem;
+      }
+      &.info {
+        padding: 0;
+      }
+    }
+
+    &__img {
+      height: 24rem;
+      position: relative;
+      img {
+        position: absolute;
+      }
+    }
+
+    &__paragraph {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.6rem; /* 160% */
+      margin-top: 2.5rem;
+    }
+  }
+
+  .menu-items {
+    margin-top: 3rem;
+  }
+}

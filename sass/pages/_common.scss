@@ -19,5 +19,18 @@
     @include absCenter;
     @include fullImg;
     z-index: -1;
+    @media (max-width: 678px) {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-head {
+    margin-top: 11rem;
+
+    &__box {
+      padding: 1.5rem;
+    }
   }
 }
