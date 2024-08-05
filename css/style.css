@@ -1509,6 +1509,11 @@ body {
   -webkit-animation: fill 0.5s ease forwards 3.5s;
   animation: fill 0.5s ease forwards 3.5s;
 }
+@media (max-width: 768px) {
+  .preloader__logo {
+    width: 55vw;
+  }
+}
 .preloader__logo path:nth-child(1) {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
