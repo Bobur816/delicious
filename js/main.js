@@ -15,9 +15,16 @@ $(window).on("load", () => {
 
   // ____________________________preloader_______________________
 
-  setTimeout(() => {
-    $(".preloader").fadeOut(1000);
-  }, 500);
+  // setTimeout(() => {
+  //   $(".preloader").fadeOut(1000);
+  // }, 500);
+
+  setTimeout(function () {
+    var preloader = document.querySelector(".preloader");
+    if (!preloader.classList.contains("done")) {
+      preloader.classList.add("done");
+    }
+  }, 4500);
 
   //____________________mobile menu__________________________
 
