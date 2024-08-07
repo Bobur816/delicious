@@ -4,6 +4,7 @@ $(window).on("load", () => {
     // direction: "vertical",
     loop: true,
     speed: 1500,
+    effect: "fade",
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

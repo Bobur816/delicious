@@ -106,8 +106,7 @@
         ),
         url(<path-to-image>) lightgray 50% / cover no-repeat;
       height: 29.8rem;
-      background-color: yellow;
-
+      overflow: hidden;
       &__info {
         padding: 2.05rem;
         height: 100%;
@@ -128,6 +127,12 @@
         position: absolute;
         z-index: -1;
         @include fullImg;
+        transition: all 0.3s;
+      }
+      &:hover {
+        & > .carousel__item__bg {
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -277,10 +282,10 @@
   }
 
   &__btns {
-    margin: 2.5rem 0.7rem 0 0;
+    margin: 2.5rem 0 0 0;
     display: flex;
     justify-content: flex-end;
-    gap: 1.8rem;
+    gap: 1rem;
     // background-color: red;
   }
 
@@ -288,15 +293,16 @@
     // background-color: red;
     width: 2.5rem;
     aspect-ratio: 1/1;
-    transform: rotate(-45deg);
+    // transform: rotate(-45deg);
     border: 1px solid var(--color-primary-dark);
     transition: all 0.3s;
+    border-radius: 0.3rem;
 
     i {
       color: var(--color-primary-dark);
       font-size: 0.8rem;
       transition: all 0.3s;
-      transform: rotate(45deg);
+      // transform: rotate(45deg);
     }
 
     &:hover {
