@@ -2052,7 +2052,7 @@ body {
 }
 @media (max-width: 768px) {
   .projects__box {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 .projects__box button {
@@ -2102,13 +2102,6 @@ body {
 .menu__subtitle__box button {
   padding: 0.85rem 2.35rem;
 }
-@media (max-width: 768px) {
-  .menu__subtitle__box {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
 .menu__carousel {
   margin-top: 3.5rem;
 }
@@ -2122,12 +2115,6 @@ body {
   display: flex;
   gap: 2.5rem;
 }
-@media (max-width: 768px) {
-  .features__box {
-    flex-direction: column;
-    gap: 2.4rem;
-  }
-}
 .features__left {
   padding-top: 3rem;
   width: 60%;
@@ -2136,14 +2123,6 @@ body {
   align-items: center;
   align-items: flex-start;
   flex-direction: column;
-}
-@media (max-width: 768px) {
-  .features__left {
-    width: 100%;
-  }
-  .features__left h2 {
-    font-size: 2.5rem;
-  }
 }
 .features__left p {
   margin: 3.3rem 0 2rem 0;
@@ -2156,11 +2135,6 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 768px) {
-  .features__left .img-box {
-    display: none;
-  }
-}
 .features__left .img-box img {
   transform: translateY(2rem);
   max-width: 50%;
@@ -2168,16 +2142,6 @@ body {
 .features__right {
   position: relative;
   aspect-ratio: 1/1;
-}
-@media (max-width: 768px) {
-  .features__right {
-    height: 24rem;
-  }
-  .features__right img {
-    height: 100%;
-    position: absolute;
-    right: -5rem;
-  }
 }
 .features__right img {
   max-width: 100%;
@@ -2192,11 +2156,6 @@ body {
   position: absolute;
   left: -5rem;
   height: 100%;
-}
-@media (max-width: 768px) {
-  .features__bottom {
-    display: flex;
-  }
 }
 
 .news {
@@ -2427,6 +2386,49 @@ body {
   background-color: var(--color-primary-dark);
 }
 
+@media (max-width: 768px) {
+  .section-2 {
+    padding: 15rem 0 5.5rem 0;
+  }
+  .section-4 {
+    padding: 5.3rem 0 4.45rem 0;
+  }
+  .menu {
+    padding: 3.25rem 0 3.25rem 0;
+  }
+  .menu__subtitle__box {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .features {
+    padding: 0 0 4.55rem 0;
+  }
+  .features__box {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .features__left {
+    width: 100%;
+  }
+  .features__left h2 {
+    font-size: 2.5rem;
+  }
+  .features__left .img-box {
+    display: none;
+  }
+  .features__right {
+    height: 24rem;
+  }
+  .features__right img {
+    height: 100%;
+    position: absolute;
+    right: -5rem;
+  }
+  .features__bottom {
+    display: flex;
+  }
+}
 .history {
   background-color: var(--color-primary);
   padding: 10.2rem 0 6.1rem 0;

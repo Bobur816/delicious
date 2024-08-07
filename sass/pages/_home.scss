@@ -143,7 +143,7 @@
       font-size: 1rem;
     }
     @media (max-width: 768px) {
-      padding: 1rem 0;
+      padding: 1.5rem 0;
     }
 
     button {
@@ -184,7 +184,6 @@
 
 .section-4 {
   background-color: var(--color-primary);
-
   padding: 6.3rem 0 4.45rem 0;
 }
 
@@ -196,12 +195,6 @@
 
     button {
       padding: 0.85rem 2.35rem;
-    }
-
-    @media (max-width: 768px) {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 1.5rem;
     }
   }
 
@@ -217,11 +210,6 @@
   &__box {
     display: flex;
     gap: 2.5rem;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      gap: 2.4rem;
-    }
   }
 
   &__left {
@@ -231,13 +219,6 @@
     align-items: flex-start;
     flex-direction: column;
 
-    @media (max-width: 768px) {
-      width: 100%;
-
-      h2 {
-        font-size: 2.5rem;
-      }
-    }
     p {
       margin: 3.3rem 0 2rem 0;
     }
@@ -250,9 +231,6 @@
       display: flex;
       justify-content: flex-end;
 
-      @media (max-width: 768px) {
-        display: none;
-      }
       img {
         transform: translateY(2rem);
         max-width: 50%;
@@ -262,15 +240,7 @@
   &__right {
     position: relative;
     aspect-ratio: 1/1;
-    @media (max-width: 768px) {
-      height: 24rem;
 
-      img {
-        height: 100%;
-        position: absolute;
-        right: -5rem;
-      }
-    }
     img {
       max-width: 100%;
       object-fit: cover;
@@ -287,10 +257,6 @@
       position: absolute;
       left: -5rem;
       height: 100%;
-    }
-
-    @media (max-width: 768px) {
-      display: flex;
     }
   }
 }
@@ -540,6 +506,58 @@
       height: 1px;
       border: none;
       background-color: var(--color-primary-dark);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-2 {
+    padding: 15rem 0 5.5rem 0;
+  }
+
+  .section-4 {
+    padding: 5.3rem 0 4.45rem 0;
+  }
+
+  .menu {
+    padding: 3.25rem 0 3.25rem 0;
+    &__subtitle__box {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  .features {
+    padding: 0 0 4.55rem 0;
+    &__box {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    &__left {
+      width: 100%;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .img-box {
+        display: none;
+      }
+    }
+    &__right {
+      height: 24rem;
+
+      img {
+        height: 100%;
+        position: absolute;
+        right: -5rem;
+      }
+    }
+
+    &__bottom {
+      display: flex;
     }
   }
 }
