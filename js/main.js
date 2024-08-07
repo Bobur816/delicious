@@ -13,19 +13,6 @@ $(window).on("load", () => {
       : $(".header").removeClass("header-scrolled");
   });
 
-  // ____________________________preloader_______________________
-
-  // setTimeout(() => {
-  //   $(".preloader").fadeOut(1000);
-  // }, 500);
-
-  // setTimeout(function () {
-  //   var preloader = document.querySelector(".preloader");
-  //   if (!preloader.classList.contains("done")) {
-  //     preloader.classList.add("done");
-  //   }
-  // }, 4500);
-
   //____________________mobile menu__________________________
 
   $(".mobile-menu__list-item .btn i").on("click", function () {
@@ -41,7 +28,6 @@ $(window).on("load", () => {
   $(".mobile-menu__close").on("click", function () {
     $(".mobile-menu").toggleClass("active");
     $(".mobile-menu__box").slideToggle(400);
-    $(".mobile-menu__bars").slideUp(100);
   });
 
   //____________________feedback__________________________
@@ -110,24 +96,44 @@ $(window).on("load", () => {
 
   // ___________________search_____________________
 
-  $(".search__btn").on("click", function () {
-    $(".search__bar__wrapper").slideToggle(200);
-    $(".selecteds__box").removeClass("active");
+  // $(".search__btn").on("click", function () {
+  //   $(".search__bar__wrapper").slideToggle(200);
+  //   $(".selecteds__box").removeClass("active");
+  // });
+
+  // $("body").on("click", function (e) {
+  //   let div = $(".search");
+  //   if (!div.is(e.target) && div.has(e.target).length === 0) {
+  //     $(".search__bar__wrapper").slideUp(200);
+  //   }
+  // });
+
+  $(".search__open").on("click", function () {
+    $(".search__full").fadeIn(300);
+    $(".search__box").slideDown(400);
+    $(".mobile-menu").toggleClass("active");
+    $(".mobile-menu__box").slideToggle(400);
   });
 
-  $("body").on("click", function (e) {
-    let div = $(".search");
+  $(".search__close").on("click", function () {
+    $(".search__full").fadeOut(400);
+    $(".search__box").slideUp(400);
+  });
+
+  $(".search__full").on("click", function (e) {
+    let div = $(".search__box");
     if (!div.is(e.target) && div.has(e.target).length === 0) {
-      $(".search__bar__wrapper").slideUp(200);
+      $(".search__full").fadeOut(400);
+      $(".search__box").slideUp(400);
     }
   });
 
   // mobile - search__open;
 
-  $(".mobile-search__open").on("click", function () {
-    $(".mobile-menu__bars").slideToggle(200);
-    $(".selecteds__box").removeClass("active");
-  });
+  // $(".mobile-search__open").on("click", function () {
+  //   $(".mobile-menu__bars").slideToggle(200);
+  //   $(".selecteds__box").removeClass("active");
+  // });
 
   //_________________________submenu-footer___________________
 

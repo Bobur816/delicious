@@ -1,33 +1,121 @@
-.search {
-  //   background-color: red;
-  @include center;
-  position: relative;
+// .search {
+//   //   background-color: red;
+//   @include center;
+//   position: relative;
 
-  &__bar__wrapper {
-    position: absolute;
-    top: 120%;
-    right: 0;
+//   &__bar__wrapper {
+//     position: absolute;
+//     top: 120%;
+//     right: 0;
+//     display: none;
+//     border: 1px solid var(--color-primary-dark);
+//     z-index: 10;
+//   }
+
+//   &__bar {
+//     // background-color: blue;
+//     width: fit-content;
+//     // gap: 2rem;
+//     display: flex;
+//     // padding: 4rem;
+//     input {
+//       padding: 0.4rem 0.4rem;
+//       outline: none;
+//       border: none;
+//     }
+
+//     button {
+//       padding: 0.4rem 1rem;
+//       color: var(--color-white);
+//       background-color: var(--color-primary-dark);
+//     }
+//   }
+// }
+
+.search {
+  &__full {
+    background-color: rgba(32, 18, 18, 0.452);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 70;
     display: none;
-    border: 1px solid var(--color-primary-dark);
-    z-index: 10;
   }
 
-  &__bar {
-    // background-color: blue;
-    width: fit-content;
-    // gap: 2rem;
-    display: flex;
-    // padding: 4rem;
+  &__box {
+    // background-color: yellow;
+    background-color: var(--color-white);
+    height: 40vh;
+    position: relative;
+    display: none;
+  }
+
+  &__form {
+    @include absCenter;
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  &__inputs {
+    // background-color: red;
+    max-width: 50rem;
+    width: 100%;
+    height: 3rem;
+    @include spaced;
+    border-bottom: 1px solid var(--color-primary-dark);
+
     input {
-      padding: 0.4rem 0.4rem;
-      outline: none;
+      display: inline-block;
       border: none;
+      background-color: transparent;
+      height: 100%;
+      width: 95%;
+      padding: 0 1rem;
+      font-size: 1rem;
+      outline: none;
     }
 
     button {
-      padding: 0.4rem 1rem;
-      color: var(--color-white);
-      background-color: var(--color-primary-dark);
+      width: 5%;
+      // background-color: green;
+      height: 100%;
+      i {
+        font-size: 1rem;
+        color: var(--color-primary-dark);
+      }
+    }
+  }
+
+  &__close {
+    // background-color: red;
+    padding: 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    &__box {
+      height: 35vh;
+    }
+
+    &__form {
+      padding: 0 1rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
     }
   }
 }

@@ -124,13 +124,11 @@
   position: relative;
   overflow: hidden;
   background-color: var(--color-primary);
+
   .container {
     padding: 0 23rem;
-
-    @media (max-width: 768px) {
-      padding: 0 1rem;
-    }
   }
+
   &__box {
     display: flex;
     padding: 10.5rem 0;
@@ -141,9 +139,6 @@
 
     p {
       font-size: 1rem;
-    }
-    @media (max-width: 768px) {
-      padding: 1.5rem 0;
     }
 
     button {
@@ -158,10 +153,6 @@
     height: 30rem;
     display: flex;
 
-    @media (max-width: 768px) {
-      position: static;
-      height: 24rem;
-    }
     img {
       max-height: 100%;
     }
@@ -171,7 +162,6 @@
     }
 
     &:last-child {
-      // background-color: yellow;
       justify-content: flex-end;
       bottom: 0;
 
@@ -297,9 +287,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
     gap: 1.5rem;
 
     a {
@@ -310,9 +297,6 @@
       height: 9.5rem;
       display: block;
 
-      @media (max-width: 768px) {
-        height: 6.5rem;
-      }
       img {
         // background-color: red;
         @include absCenter;
@@ -429,29 +413,15 @@
   margin-top: 11.2rem;
   background-color: var(--color-primary);
 
-  @media (max-width: 768px) {
-    margin-top: 8rem;
-  }
-
   &__box {
     display: grid;
     grid-template-columns: 3fr 4fr;
     gap: 3.8rem;
-
-    @media (max-width: 768px) {
-      gap: 2rem;
-      grid-template-columns: 1fr;
-      padding-bottom: 2rem;
-    }
   }
 
   &__img {
     transform: translateY(-3.6rem);
     position: relative;
-
-    @media (max-width: 768px) {
-      padding: 0 0.6rem;
-    }
 
     &::after {
       content: "";
@@ -462,10 +432,6 @@
       bottom: -1.25rem;
       right: -1.25rem;
       z-index: -1;
-
-      @media (max-width: 768px) {
-        right: 0;
-      }
     }
     img {
       width: 100%;
@@ -486,10 +452,6 @@
       font-weight: 400;
       line-height: normal;
       margin-bottom: 0.5rem;
-
-      @media (max-width: 768px) {
-        font-size: 2rem;
-      }
     }
 
     p {
@@ -513,6 +475,20 @@
 @media (max-width: 768px) {
   .section-2 {
     padding: 15rem 0 5.5rem 0;
+  }
+
+  .projects {
+    .container {
+      padding: 0 1rem;
+    }
+    &__box {
+      padding: 1.5rem 0;
+    }
+
+    &__img {
+      position: static;
+      height: 24rem;
+    }
   }
 
   .section-4 {
@@ -558,6 +534,39 @@
 
     &__bottom {
       display: flex;
+    }
+  }
+
+  .partners {
+    &__box {
+      grid-template-columns: 1fr 1fr;
+      a {
+        height: 6.5rem;
+      }
+    }
+  }
+
+  .contact {
+    margin-top: 8rem;
+
+    &__box {
+      gap: 2rem;
+      grid-template-columns: 1fr;
+      padding-bottom: 2rem;
+    }
+
+    &__img {
+      padding: 0 0.6rem;
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    &__info {
+      h2 {
+        font-size: 2rem;
+      }
     }
   }
 }

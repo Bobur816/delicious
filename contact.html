@@ -20,6 +20,22 @@
   </head>
   <body>
 
+
+    <!-- search bar   -->
+    
+    <div class="search__full">
+      <div class="search__box">
+        <form class="search__form">
+          <h2 class="search__title">What are you looking for?</h2>
+          <div class="search__inputs">
+            <input type="text" placeholder="Enter your keywords...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </form>
+    
+        <button class="search__close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
     
     <!-- Feedback  -->
 
@@ -52,7 +68,7 @@
      <div class="mobile-menu">
       <div class="mobile-menu__box">
         <div class="mobile-menu__controls"> 
-          <button class="icon mobile-search__open">
+          <button class="icon mobile-search__open search__open">
             <img src="img/icon/search-icon.svg" alt="search-icon">
           </button>
           <a href="orders.html" class="selecteds-btn">
@@ -172,19 +188,9 @@
               </ul>
             </nav>
             <div class="header__control">
-              <div class="icon search">
-                <button class="search__btn">
-                  <img src="img/icon/search-icon.svg" alt="search-icon">
-                </button>
-                <div class="search__bar__wrapper">
-                  <div class="search__bar">
-                    <input type="text" placeholder="search">
-                    <button>
-                      Search
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <button class="search__open">
+                <img src="img/icon/search-icon.svg" alt="search-icon">
+              </button>
               <div  class="selecteds">
                 <button class="selecteds-btn">
                   <img src="img/icon/theme-icon.svg" alt="theme-icon"> 

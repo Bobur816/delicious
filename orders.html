@@ -20,9 +20,22 @@
   </head>
   <body>
 
+    <!-- search bar   -->
+    <div class="search__full">
+      <div class="search__box">
+        <form class="search__form">
+          <h2 class="search__title">What are you looking for?</h2>
+          <div class="search__inputs">
+            <input type="text" placeholder="Enter your keywords...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </form>
     
-    <!-- Feedback  -->
+        <button class="search__close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
 
+    <!-- Feedback  -->
     <div class="feedback">
       <div class="feedback__content">
         <button class="feedback__close"><i class="fa-solid fa-xmark"></i></button>
@@ -49,10 +62,10 @@
     </div>
 
      <!-- Mobile manu   -->
-     <div class="mobile-menu">
+    <div class="mobile-menu">
       <div class="mobile-menu__box">
         <div class="mobile-menu__controls"> 
-          <button class="icon mobile-search__open">
+          <button class="icon mobile-search__open search__open">
             <img src="img/icon/search-icon.svg" alt="search-icon">
           </button>
           <a href="orders.html" class="selecteds-btn">
@@ -124,8 +137,8 @@
     
     <!-- Header  -->
     <header class="header">
-      <!-- Header copy  -->
 
+      <!-- Header copy  -->
       <div class="header__copy">
         <div class="container">
           <p class="header__copy__text">
@@ -134,9 +147,8 @@
           </p>
         </div>
       </div>
-
+    
       <!-- Header Nav  -->
-
       <div class="header__navigation" >
         <div class="container">
           <div class="header__nav">
@@ -171,19 +183,9 @@
               </ul>
             </nav>
             <div class="header__control">
-              <div class="icon search">
-                <button class="search__btn">
-                  <img src="img/icon/search-icon.svg" alt="search-icon">
-                </button>
-                <div class="search__bar__wrapper">
-                  <div class="search__bar">
-                    <input type="text" placeholder="search">
-                    <button>
-                      Search
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <button class="search__open">
+                <img src="img/icon/search-icon.svg" alt="search-icon">
+              </button>
               <div  class="selecteds">
                 <button class="selecteds-btn">
                   <img src="img/icon/theme-icon.svg" alt="theme-icon"> 
@@ -208,14 +210,11 @@
                     </li>
                   </ul>
                   <a href="orders.html" class="btn_white">Envoyer</a>
-
                 </div>
               </div>
 
-              
               <button class="feedback__open btn btn_primary">+998(99) 999 99 99</button>
             </div>
-
             <div class="header__mobile">
               <button class="mobile-menu__open"><i class="fa-solid fa-bars"></i></button>
               <button class="feedback__open" ><i class="fa-solid fa-phone"></i></button>
@@ -223,7 +222,6 @@
           </div>
         </div>
       </div>
-      
     </header>
 
     <main>
@@ -279,7 +277,6 @@
         </div>
       </section>
 
-
       <section class="contact">
         <div class="container">
           <div class="contact__box">
@@ -298,7 +295,6 @@
           </div>
         </div>
       </section>
-
 
     </main>
     <footer class="footer">
@@ -382,6 +378,8 @@
         </div>
       </div>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/wow.min.js"></script>
