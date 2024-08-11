@@ -105,6 +105,29 @@
   &__info {
     width: 50%;
 
+    .amount {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      height: 3rem;
+      margin: 1.5rem 0;
+
+      span {
+        font-size: 1.5rem;
+      }
+
+      &__btn {
+        padding: 0;
+        background-color: var(--color-primary);
+        height: 100%;
+        aspect-ratio: 1/1;
+        font-size: 1.5rem;
+        border-radius: 50%;
+      }
+    }
+
     h3 {
       font-family: "Hello Paris";
       font-size: 2.5rem;
@@ -128,9 +151,9 @@
       line-height: 1.6rem; /* 160% */
     }
 
-    button {
+    .order-btn {
       padding: 0.9rem 4rem;
-      margin-top: 2rem;
+      // margin-top: 2rem;
     }
   }
 }
@@ -216,8 +239,7 @@
     &__info {
       width: 100%;
 
-      button {
-        margin-top: 1.5rem;
+      .order-btn {
         width: 100%;
       }
     }

@@ -2648,6 +2648,26 @@ body {
 .menu-item__info {
   width: 50%;
 }
+.menu-item__info .amount {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+.menu-item__info .amount span {
+  font-size: 1.5rem;
+}
+.menu-item__info .amount__btn {
+  padding: 0;
+  background-color: var(--color-primary);
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
 .menu-item__info h3 {
   font-family: "Hello Paris";
   font-size: 2.5rem;
@@ -2668,9 +2688,8 @@ body {
   font-weight: 400;
   line-height: 1.6rem; /* 160% */
 }
-.menu-item__info button {
+.menu-item__info .order-btn {
   padding: 0.9rem 4rem;
-  margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -2736,8 +2755,7 @@ body {
   .menu-item__info {
     width: 100%;
   }
-  .menu-item__info button {
-    margin-top: 1.5rem;
+  .menu-item__info .order-btn {
     width: 100%;
   }
 }
