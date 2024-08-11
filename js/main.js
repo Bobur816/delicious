@@ -142,6 +142,23 @@ $(window).on("load", () => {
     $(".footer-submenu").slideToggle(400);
   });
 
+  //_________________________item-amount___________________
+
+  $(".amount").on("click", function (e) {
+    const btnInc = this.querySelector(".increment");
+    const btnDec = this.querySelector(".decrement");
+    const show = this.querySelector(".amount__show");
+
+    let amount = Number(show.textContent);
+    if (e.target === btnInc) {
+      amount += 1;
+      show.textContent = amount;
+    } else if (e.target === btnDec && amount !== 1) {
+      amount -= 1;
+      show.textContent = amount;
+    }
+  });
+
   new WOW({
     offset: 50,
     mobile: false,
