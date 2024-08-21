@@ -2840,7 +2840,7 @@ body {
   color: var(--color-primary-dark);
   font-size: 1.3rem;
   font-weight: 600;
-  line-height: 100%;
+  line-height: normal;
   margin: 4rem 0 1.25rem 0;
 }
 .news-item__left p {
